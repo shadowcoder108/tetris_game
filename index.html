@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel = "stylesheet" href = "tetris.css">
+    </head>
+    <body>
+        <script src="tetris.js"></script>
+        <div id = "hello">
+        <div id = "start" class = "page">
+            <div class = "heading">TETRIS</div>
+            <button class = "play-btn" onclick="startGame();">START</button>
+            
+        </div>
+        <div id = "game" class = "page">
+            <div id = "score">SCORE: <b>0</b></div>
+            <div id = "tetris">
+                <div id = "blocks"></div>
+            </div>
+            <div id = "test"></div>
+            <button id = "shift-l" class = "btn">LEFT</button>
+            <button id = "shift-r" class = "btn">RIGHT</button>
+            <button id = "rotate" class = "btn">ROTATE</button>
+            <button id = "down" class = "btn">DOWN</button>
+        </div>
+        <div id = "end" class = "page">
+            <div class = "heading">GAME OVER</div>
+            <button class = "play-btn" onclick = "startGame();">REPLAY</button>
+            <div id = "final-score"></div>
+        </div>
+        <div id = "rules" class = "newpage">
+            <button class = "back" onclick = "back();">BACK</button>
+            <div class = "heading">RULES</div>
+            <div class = "text">
+                There are 4 types of obstacles i.e. T, L, I (line), O(square). Each obstacle contains 4 blocks. You can rotate or shift (left or right) these obstacles and you have to arrange them in such a way that they fill a complete row of an empty space with 20 rows and 10 columns. The row which will fill completely with blue blocks then it will be removed and your score will increase by 10. There are some bonuses too! If you destroy 2 rows at the same time then there will be 5 bonus (total: +25), if you destroy 3 rows at the same time then there will be a bonus of 20 (total: +50), if you destroy 4 rows at the same time there will be a bonus of 60 (total: +100). Red colour will show that the block is moving and blue colour will show that the block is at rest and the light colored blocks will represent where the red obstacle will land. Strategy: don't leave empty spaces. There are 4 buttons on the screen:<div id = "left-align"><br>LEFT : to shift the left<br>RIGHT : to shift the right<br>DOWN : to push the obstacle down to its final position (that was earlier represented by white color) to save your time<br>ROTATE : to rotate the obstacle pi/4 radians in clockwise direction.</div><br>You will lose when a blue block will be there in the first row.
+            </div>
+        </div>
+       
+        </div>
+    </body>
+</html>
+
+
